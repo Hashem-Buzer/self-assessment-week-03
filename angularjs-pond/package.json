@@ -6,5 +6,8 @@
   "license": "UNLICENSED",
   "scripts": {
     "start": "live-server"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.2"
   }
 }

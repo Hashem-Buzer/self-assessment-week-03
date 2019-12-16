@@ -1,4 +1,4 @@
-angular.module('fish-pond')
+  angular.module('fish-pond')
 .component('fishTable', {
   bindings: {
     fishes: '<'

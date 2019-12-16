@@ -1,7 +1,8 @@
 angular.module('fish-pond')
 .controller('FishTableCtrl', function() {
   this.showDescription = false;
-  this.toggleDescription = () => {
+  this.toggleDescription = (clName) => {
+    var name = clName;
     this.showDescription = !this.showDescription;
   };
 })
@@ -11,7 +12,7 @@ angular.module('fish-pond')
   },
   controller: 'FishTableCtrl',
   template: `
-    <div ng-click="$ctrl.toggleDescription()">
+    <div ng-click="$ctrl.toggleDescription(fishData.name)">
       <span class="fish-name">Nemo</span>
       <span>
         <img src="http://tinyurl.com/h8o5szh" />
